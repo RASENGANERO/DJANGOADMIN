@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - My Django Application</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+    <script src="{% static 'app/scripts/jquery.js' %}"></script>
+    <script src="{% static 'app/scripts/main.js' %}" charset="utf-8"></script>
+</head>
+<body>
+    {% ifequal check False %}
+    <header class="header">
+        <div class="system__info">
+            <img class="logo_img" src="{% static 'app/img/logo.png' %}"/>
+            <p class="logo_name">Seller Helper</p>
+            
+        </div>
+        
+        <div class="username__auth">
+            <div class="user">
+                <p class="username">{{info.0}}</p>
+                <p class="usersurname">{{info.1}}</p>
+            </div>
+            <p class="user_type">{{info.2}}</p>
+        </div>
+    </header>    
+    {% endifequal %}

@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    column-gap: 21px;
+}
+body {
+    font-family: sans-serif;
+    color: #202020;
+}
+img {
+    max-width: 100%;
+}
+.container__users {
+    display:flex;
+}
+
+.main__section {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+}
+.main__container{
+    display:flex;
+}
+
+.params__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    padding: 0px;
+}
+
+.params__list-item {
+    display: flex;
+    flex-direction: row;
+    column-gap: 112px;
+    border-radius: 23px;
+    border: 3px solid #337AB7;
+    list-style-type: none;
+    width: inherit;
+    align-items: center;
+    background-color: #EBF3FA;
+    cursor: pointer;
+    height: 54px;
+}
+.text__function-block {
+    padding-right: 34px;
+    text-align: center;
+    font-size: 23px;
+    width: max-content;
+}
+
+.function__block {
+    background: #337AB7;
+    position: relative;
+    width: 70px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.function__block::after {
+    content: '';
+    position: absolute;
+    right: -53px;
+    border-left: 35px solid #082567;
+    width: 0px;
+    border-top: 25px solid transparent;
+    border-left: 68px solid #337AB7;
+    border-bottom: 25px solid transparent;
+}
+.container__functions {
+    display: block;
+}
+.container__functions-item {
+    display: inline-block;
+    flex-direction: column;
+    width: inherit;
+    display: none;
+    height: fit-content;
+}
+
+.functions-item-active {
+    display: block;
+}
+.params__item-active {
+    background-color:white;
+}
+.send_but {
+    display:flex;
+    background-color: antiquewhite;
+    color:red;
+}
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+}
+
+    .table th {
+        font-weight: bold;
+        padding: 5px;
+        background: #efefef;
+        border: 1px solid #dddddd;
+    }
+
+    .table td {
+        border: 1px solid #dddddd;
+        padding: 5px;
+    }

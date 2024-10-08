@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.container {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 286px 1fr;
+    gap: 21px;
+}
+body {
+    font-family: sans-serif;
+    color: #202020;
+    height: 100%;
+    width: 100%;
+    background: #F5F5F5;
+}
+img {
+    max-width: 100%;
+}
+.container__users {
+    display:flex;
+}
+
+.main__section {
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+.param__section {
+    background-color: #3F4D67;
+    width: inherit;
+    height: inherit;
+}
+.params__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    padding: 0px;
+}
+
+.params__list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 12px;
+    gap: 8px;
+    width: 256px;
+    height: 32px;
+    cursor: pointer;
+}
+.text__function-block {
+    width: 96px;
+    height: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A5B3CC;
+}
+
+/*.function__block {
+    background: #337AB7;
+    position: relative;
+    width: 70px;
+    height: 50px;
+    border-radius: 20px;
+}
+.function__block::after {
+    content: '';
+    position: absolute;
+    right: -53px;
+    border-left: 35px solid #082567;
+    width: 0px;
+    border-top: 25px solid transparent;
+    border-left: 68px solid #337AB7;
+    border-bottom: 25px solid transparent;
+}*/
+.container__functions {
+    display: block;
+}
+.container__functions-item {
+    display: inline-block;
+    flex-direction: column;
+    width: inherit;
+    display: none;
+    height: fit-content;
+}
+
+.functions-item-active {
+    display: block;
+}
+.params__item-active {
+    background-color:white;
+}
+.send_but {
+    display:flex;
+    background-color: antiquewhite;
+    color:red;
+}
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+    .table th {
+        font-weight: bold;
+        padding: 5px;
+        background-color: white;
+    }
+
+    .table td {
+        border: 1px solid #dddddd;
+        padding: 5px;
+    }
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #3F4D67;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.system__info {
+    display: flex;
+    color: white;
+    padding-left: 12px;
+    padding-top: 17px;
+    gap: 8px;
+}
+.logo_name {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+}
+.logo_img {
+    padding-bottom: 12px;
+}
+.username__auth {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    padding-right: 14px;
+    padding-top: 10px;
+}
+.user {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+    /* Add a background color when the inputs get focus */
+    input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+/* Set a style for all buttons */
+.signupbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 26px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    min-width: 50%;
+    opacity: 0.9;
+}
+.clearfix {
+    display: flex;
+    gap: 10px;
+}
+button:hover {
+    opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+    width: 50%;
+}
+.container-modal1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.adduser_form {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* The Modal (background) */
+    .modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #f44336;
+        cursor: pointer;
+    }
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.select-css {
+    display: block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'), linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+    .select-css::-ms-expand {
+        display: none;
+    }
+
+    .select-css:hover {
+        border-color: #888;
+    }
+
+    .select-css:focus {
+        border-color: #aaa;
+        box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+        box-shadow: 0 0 0 3px -moz-mac-focusring;
+        color: #222;
+        outline: none;
+    }
+
+    .select-css option {
+        font-weight: normal;
+    }
+
+*[dir="rtl"] .select-css, :root:lang(ar) .select-css, :root:lang(iw) .select-css {
+    background-position: left .7em top 50%, 0 0;
+    padding: .6em .8em .5em 1.4em;
+}
+
+.heading {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.addbtnuser {
+    color: white;
+    background-color: green;
+    border: none;
+    height: auto;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 8px;
+    gap: 12px;
+    width: 190px;
+    height: 32px;
+    background: #3F4D67;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.delbtnuser {
+    color: white;
+    background-color: red;
+    border: none;
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+    
+}
+
+.heading-tb {
+    display: contents;
+}
+.edit_tb {
+    display: none;
+    min-width: 100%;
+}
+.changeuser {
+    color: white;
+    background-color: forestgreen;
+    border: none;
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+    display:none;
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
